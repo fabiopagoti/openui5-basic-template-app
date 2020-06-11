@@ -10,6 +10,9 @@ sap.ui.define([
 
 		onInit: function () {
 
+			var oModel = new sap.ui.model.json.JSONModel("http://localhost:3002/http://api.open-notify.org/astros.json");
+			this.getView().setModel(oModel);
+
 		}
 	});
 });

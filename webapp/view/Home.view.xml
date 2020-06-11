@@ -6,6 +6,10 @@
 	<Page
 		id="page"
 		title="{i18n>title}">
-		<content></content>
+		<content>
+			<List items="{/people}" >
+				<StandardListItem title="{name}" />
+			</List>
+		</content>
 	</Page>
 </mvc:View>
